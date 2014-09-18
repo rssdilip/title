@@ -1,0 +1,50 @@
+﻿@model MvcApplication5.Models.Title
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Title</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TitleName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TitleName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TitleNameSortable)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TitleNameSortable)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.TitleTypeId)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.TitleTypeId)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ReleaseYear)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ReleaseYear)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.ProcessedDateTimeUTC)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.ProcessedDateTimeUTC)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.TitleId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
